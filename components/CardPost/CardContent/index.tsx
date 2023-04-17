@@ -1,3 +1,5 @@
+import { Post } from "@/types/Post";
+
 interface CardContentProps {
   post: Post;
 }
