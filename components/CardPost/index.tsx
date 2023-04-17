@@ -1,6 +1,7 @@
 import { Post } from "@/types/Post";
 import { CardHeader } from "./CardHeader";
 import CardContentInfo from "./CardContent/CardContentInfo";
+import CardContentDescription from "./CardContent/CardContentDescription";
 
 interface CardProps {
   post: Post;
@@ -15,6 +16,7 @@ export function CardPost({ post }: CardProps) {
           username={post.username}
           date={post.created_datetime}
         />
+        <CardContentDescription content={post.content} />
       </div>
     </div>
   );
