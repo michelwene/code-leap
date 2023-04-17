@@ -6,14 +6,16 @@ import Button from "@/components/Button";
 import Input from "@/components/input";
 import { useForm, FormProvider } from "react-hook-form";
 
-const post = {
-  id: 1,
-  title: "My First Post at CodeLeap Network! ",
-  content:
-    "Curabitur suscipit suscipit tellus. Phasellus consectetuer vestibulum elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Duis vel nibh at velit scelerisque suscipit.",
-  username: "@Victor",
-  created_datetime: new Date(),
-};
+const post = [
+  {
+    id: 1,
+    title: "My First Post at CodeLeap Network! ",
+    content:
+      "Curabitur suscipit suscipit tellus. Phasellus consectetuer vestibulum elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Duis vel nibh at velit scelerisque suscipit.",
+    username: "@Victor",
+    created_datetime: new Date(),
+  },
+];
 
 export default function Blog() {
   return (
@@ -27,7 +29,9 @@ export default function Blog() {
             </h2>
             <FormCreatePost />
           </div>
-          <CardPost post={post} />
+          {post.map((post) => (
+            <CardPost post={post} key={post.id} />
+          ))}
         </div>
       </div>
     </div>
