@@ -1,6 +1,6 @@
 import { Post } from "@/types/Post";
 import { CardHeader } from "./CardHeader";
-import { CardContentInfo } from "./CardContent/CardContentInfo";
+import CardContentInfo from "./CardContent/CardContentInfo";
 
 interface CardProps {
   post: Post;
