@@ -1,21 +1,6 @@
 import { toast } from "react-toastify";
 import { api } from "./api";
-
-type CreatePost = {
-  username: string;
-  title: string;
-  content: string;
-};
-
-type UpdatePost = {
-  title: string;
-  content: string;
-};
-
-type Params = {
-  page: number;
-  limit: number;
-};
+import { CreatePost, Params, UpdatePost } from "@/types/Services";
 
 export class Services {
   public async getPosts(params: Params) {
