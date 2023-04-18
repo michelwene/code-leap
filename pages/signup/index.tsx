@@ -30,12 +30,6 @@ export default function Signup() {
     router.push("/blog");
   };
 
-  // useEffect(() => {
-  //   if (user.user) {
-  //     router.push("/blog");
-  //   }
-  // }, [user]);
-
   return (
     <div className="min-h-screen bg-[#DDDDDD] font-roboto">
       <FormProvider {...methods}>
