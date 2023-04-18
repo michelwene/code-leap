@@ -3,15 +3,13 @@ import Input from "@/components/input";
 import { addUser, selectUser } from "@/redux/UserSlice";
 import { useRouter } from "next/router";
 import { useForm, FormProvider } from "react-hook-form";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
 type FormValues = {
   name: string;
 };
 
 export default function Signup() {
-  const user = useSelector(selectUser);
   const dispatch = useDispatch();
   const router = useRouter();
   const methods = useForm({
