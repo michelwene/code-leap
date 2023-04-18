@@ -38,13 +38,13 @@ export default function Blog() {
     setPage(1);
   }, []);
 
-  const handleNextPage = () => {
+  const handleNextPage = useCallback(() => {
     setPage((prev) => prev + 1);
-  };
+  }, []);
 
-  const handlePrevPage = () => {
+  const handlePrevPage = useCallback(() => {
     setPage((prev) => prev - 1);
-  };
+  }, []);
 
   const totalPages = Math.ceil(total / perPage);
 

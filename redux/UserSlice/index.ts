@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import Cookies from "js-cookie";
+import { RootState } from "../store";
 
 const initialState: UserState = JSON.parse(Cookies.get("user") || "{}");
 
@@ -29,6 +30,6 @@ export const UserSlice = createSlice({
 
 export const { addUser } = UserSlice.actions;
 
-export const selectUser = (state: any) => state.user;
+export const selectUser = (state: RootState) => state.user;
 
 export default UserSlice.reducer;
