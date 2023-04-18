@@ -1,4 +1,4 @@
-# CodeLeap
+# CodeLeap (Portuguese - Português)
 
 Este é um projeto simulando um blog. O objetivo é permitir que o usuário entre com um usuário, crie posts, exclua e edit seus posts, bem como visualizar o posts tanto próprio quanto de outros usuários.
 
@@ -35,3 +35,43 @@ Este projeto foi desenvolvido como um teste técnico e, portanto, não aceitamos
 ## Licença
 
 Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
+
+--------------------------------------------------------------------------------------------------
+
+# CodeLeap (English - Inglês).
+
+This is a project simulating a blog. The goal is to allow the user to login, create posts, delete and edit their own posts, as well as view both their own posts and those of other users.
+
+## Installation
+
+1. Make sure you have [Node.js](https://nodejs.org/) installed on your operating system.
+2. Clone this repository to your local machine using `git clone https://github.com/michelwene/code-leap`.
+3. In the project root folder, run the command `yarn install` to install the project dependencies.
+
+## How to Use
+
+1. In the project root folder, run the command `yarn run dev` to start the server.
+2. Access `http://localhost:3000` in your browser to open the website.
+3. On the homepage, fill in the user field and click to log in.
+4. Fill in the "title" and "content" fields and click the "Create" button.
+5. After that, you will be able to view your published post right below.
+
+## Technologies Used
+
+- React: JavaScript library for building user interfaces.
+- NextJS: ReactJS framework for building user interfaces.
+- Redux: JavaScript library for state management.
+- React-Redux: JavaScript library for integrating React with Redux.
+- Yarn: Package manager for Node.js.
+- HTML: Markup language for the web.
+- CSS: Styling language for the web.
+- Styled-Components: CSS framework for styling components.
+- React-Icons: JavaScript library for using icons.
+
+## Contributing
+
+This project was developed as a technical test and therefore we do not accept external contributions.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
