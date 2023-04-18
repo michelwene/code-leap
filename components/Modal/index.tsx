@@ -1,9 +1,5 @@
 import React from "react";
-
-interface ModalProps {
-  isOpen: boolean;
-  children?: React.ReactNode;
-}
+import { ModalProps } from "./types";
 
 export function ModalLayout({ isOpen, children }: ModalProps) {
   return (

@@ -1,11 +1,5 @@
 import { ForwardRefRenderFunction, forwardRef } from "react";
-
-interface IconButtonProps {
-  icon: React.ReactNode;
-  type?: "button" | "submit" | "reset";
-  disabled?: boolean;
-  onClick?: () => void;
-}
+import { IconButtonProps } from "./types";
 
 const iconButton: ForwardRefRenderFunction<
   HTMLButtonElement,

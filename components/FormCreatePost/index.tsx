@@ -7,15 +7,7 @@ import { useSelector } from "react-redux";
 import { selectUser } from "@/redux/UserSlice";
 import { useState } from "react";
 import { toast } from "react-toastify";
-
-type FormDataCreatePost = {
-  title: string;
-  content: string;
-};
-
-interface FormCreatePostProps {
-  refetch: () => void;
-}
+import { FormCreatePostProps, FormDataCreatePost } from "./types";
 
 export function FormCreatePost({ refetch }: FormCreatePostProps) {
   const [isLoading, setIsLoading] = useState(false);

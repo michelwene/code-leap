@@ -7,17 +7,7 @@ import InputTextArea from "../InputTextArea";
 import { Services } from "@/actions/services";
 import { useState } from "react";
 import { toast } from "react-toastify";
-interface ModalEditPostProps {
-  isOpen: boolean;
-  handleClose: () => void;
-  post: Post;
-  refetch: () => void;
-}
-
-type formEditPost = {
-  title: string;
-  content: string;
-};
+import { ModalEditPostProps, formEditPost } from "./types";
 
 export function ModalEditPost({
   handleClose,

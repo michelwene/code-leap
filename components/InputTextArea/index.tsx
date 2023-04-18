@@ -1,12 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { ForwardRefRenderFunction, forwardRef } from "react";
 import { Controller, useFormContext } from "react-hook-form";
-
-interface InputTextAreaProps {
-  name: string;
-  placeholder: string;
-  id?: string;
-}
+import { InputTextAreaProps } from "./types";
 
 const inputTextArea: ForwardRefRenderFunction<
   HTMLTextAreaElement,

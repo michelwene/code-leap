@@ -3,13 +3,7 @@ import Button from "../Button";
 import { ModalLayout } from "../Modal";
 import { useState } from "react";
 import { toast } from "react-toastify";
-
-interface ModalDeletePostProps {
-  isOpen: boolean;
-  handleClose: () => void;
-  id: number;
-  refetch: () => void;
-}
+import { ModalDeletePostProps } from "./types";
 
 export function ModalDeletePost({
   handleClose,

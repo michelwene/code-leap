@@ -35,6 +35,7 @@ export default function Blog() {
 
   const onRefetch = useCallback(() => {
     setRefetch(true);
+    setPage(1);
   }, []);
 
   const handleNextPage = () => {

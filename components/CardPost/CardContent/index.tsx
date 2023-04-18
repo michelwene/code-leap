@@ -1,8 +1,5 @@
 import { Post } from "@/types/Post";
-
-interface CardContentProps {
-  post: Post;
-}
+import { CardContentProps } from "../types";
 
 export default function CardContent({ post }: CardContentProps) {
   return (

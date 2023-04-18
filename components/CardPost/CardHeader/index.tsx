@@ -7,10 +7,7 @@ import { useState, useRef } from "react";
 import { MdDeleteForever } from "react-icons/md";
 import { TiEdit } from "react-icons/ti";
 import { useSelector } from "react-redux";
-interface CardHeaderProps {
-  post: Post;
-  refetch: () => void;
-}
+import { CardHeaderProps } from "../types";
 
 export function CardHeader({ post, refetch }: CardHeaderProps) {
   const username = useSelector(selectUser);
@@ -41,7 +38,7 @@ export function CardHeader({ post, refetch }: CardHeaderProps) {
     <>
       <div className="flex items-center justify-between bg-[#7695EC] p-6 rounded-tr-2xl rounded-tl-2xl gap-4">
         <div>
-          <h3 className="font-bold text-[22px] leading-[26px] text-white">
+          <h3 className="font-bold text-[22px] leading-[26px] text-white break-all">
             {post.title}
           </h3>
         </div>

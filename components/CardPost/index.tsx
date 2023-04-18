@@ -2,11 +2,7 @@ import { Post } from "@/types/Post";
 import { CardHeader } from "./CardHeader";
 import CardContentInfo from "./CardContent/CardContentInfo";
 import CardContentDescription from "./CardContent/CardContentDescription";
-
-interface CardProps {
-  post: Post;
-  refetch: () => void;
-}
+import { CardProps } from "./types";
 
 export function CardPost({ post, refetch }: CardProps) {
   return (

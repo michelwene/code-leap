@@ -1,12 +1,6 @@
 import IconButton from "../IconButton";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-
-interface PaginationProps {
-  nextPage: () => void;
-  prevPage: () => void;
-  page: number;
-  totalPages: number;
-}
+import { PaginationProps } from "./types";
 
 export function Pagination({
   nextPage,
