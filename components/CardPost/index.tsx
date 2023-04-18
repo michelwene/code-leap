@@ -5,12 +5,13 @@ import CardContentDescription from "./CardContent/CardContentDescription";
 
 interface CardProps {
   post: Post;
+  refetch: () => void;
 }
 
-export function CardPost({ post }: CardProps) {
+export function CardPost({ post, refetch }: CardProps) {
   return (
     <div>
-      <CardHeader post={post} />
+      <CardHeader post={post} refetch={refetch} />
       <div className="border-l border-b border-r border-[#999999] border-solid rounded-br-2xl rounded-bl-2xl p-6">
         <CardContentInfo
           username={post.username}

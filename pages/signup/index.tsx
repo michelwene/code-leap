@@ -1,12 +1,19 @@
 import Button from "@/components/Button";
 import Input from "@/components/input";
+import { addUser, selectUser } from "@/redux/UserSlice";
+import { useRouter } from "next/router";
 import { useForm, FormProvider } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
 
 type FormValues = {
   name: string;
 };
 
 export default function Signup() {
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
+  const router = useRouter();
   const methods = useForm({
     defaultValues: {
       name: "",
@@ -14,7 +21,21 @@ export default function Signup() {
   });
   const { handleSubmit, watch } = methods;
   const name = watch("name");
-  const onSubmit = (data: FormValues) => console.log(data);
+  const onSubmit = (data: FormValues) => {
+    dispatch(
+      addUser({
+        user: data.name,
+      })
+    );
+    router.push("/blog");
+  };
+
+  useEffect(() => {
+    if (user.user) {
+      router.push("/blog");
+    }
+  }, [user]);
+
   return (
     <div className="min-h-screen bg-[#DDDDDD] font-roboto">
       <FormProvider {...methods}>

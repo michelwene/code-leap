@@ -26,7 +26,7 @@ const inputTextArea: ForwardRefRenderFunction<
           id={id}
           value={inputProps.field.value}
           onChange={inputProps.field.onChange}
-          className="rounded-lg w-full border-[#777777] border border-solid outline-none py-2 px-3 font-normal text-[14px] leading-4 text-[#CCCCCC]"
+          className="h-[74px] resize-none rounded-lg w-full border-[#777777] border border-solid outline-none py-2 px-3 font-normal text-[14px] leading-4 text-[#CCCCCC]"
         ></textarea>
       )}
     />
