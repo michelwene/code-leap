@@ -6,7 +6,6 @@ import { Services } from "@/actions/services";
 import { useSelector } from "react-redux";
 import { selectUser } from "@/redux/UserSlice";
 import { useState } from "react";
-import { toast } from "react-toastify";
 import { FormCreatePostProps, FormDataCreatePost } from "./types";
 
 export function FormCreatePost({ refetch }: FormCreatePostProps) {

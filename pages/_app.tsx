@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import store from "@/redux/store";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";

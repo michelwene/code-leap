@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Services } from "@/actions/services";
 import { CardPost } from "@/components/CardPost";
 import { FormCreatePost } from "@/components/FormCreatePost";
